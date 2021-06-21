@@ -1,6 +1,6 @@
-sudo pacman -S xorg xorg-xinit lightdm noto-fonts noto-fonts-emoji alacritty zsh pulseaudio pulseaudio-alsa alsa-utils pavucontrol rofi dunst feh polkit mate-polkit xclip python python2 tree unzip p7zip neofetch wget lolcat fortune-mod cowsay vlc ranger ueberzug libnotify exa
+sudo pacman --noconfirm -S xorg xorg-xinit lightdm noto-fonts noto-fonts-emoji alacritty zsh pulseaudio pulseaudio-alsa alsa-utils pavucontrol rofi dunst feh polkit mate-polkit xclip python python2 tree unzip p7zip neofetch wget lolcat fortune-mod cowsay vlc ranger ueberzug libnotify exa
 
-yay -S i3-gaps lightdm-slick-greeter bottom-bin picom-ibhagwan brave reversal-icon-theme-git polybar ttf-nerd-fonts-hack-complete-git
+yay -S i3-gaps lightdm-slick-greeter bottom-bin picom-ibhagwan brave-bin reversal-icon-theme-git polybar ttf-nerd-fonts-hack-complete-git
 
 sudo sed -i '/^\[Seat:\*]/a user-session=i3wm' /etc/lightdm/lightdm.conf
 sudo sed -i '/^\[Seat:\*]/a greeter-session=lightdm-slick-greeter' /etc/lightdm/lightdm.conf
@@ -16,7 +16,7 @@ wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20I
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf -O "$HOME/.local/share/fonts/MesloLGS NF Bold Italic.ttf"
 fc-cache -f -v
 
-wget -o /usr/share/pixmaps/wallpaper.png https://i.redd.it/pm2yv0e8sf061.png
+sudo wget -o /usr/share/pixmaps/wallpaper.png https://i.redd.it/pm1yv0e8sf061.png
 
 alias ddot='/usr/bin/git --git-dir=$HOME/.ddot --work-tree=$HOME'
 git clone --bare https://github.com/pedrofgodinho/DesktopDotfiles.git $HOME/.ddot
