@@ -164,7 +164,7 @@ gaps top 62
 
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 exec --no-startup-id /usr/bin/dunst
-exec_always --no-startup-id bash -c "feh --bg-fill ~/.wallpaper/wallpaper.png"
+exec_always --no-startup-id bash -c "feh --bg-fill /usr/share/pixmaps/wallpaper.png"
 
 # wallpaper
 # exec_always --no-startup-id ~/.wallpaper/wallpaper_timer > ~/.wallpaper/timer_logs
