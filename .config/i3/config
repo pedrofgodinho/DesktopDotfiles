@@ -1,7 +1,7 @@
 set $mod Mod4
 
 # Rofi launch script
-set $rofi ~/.scripts/rofi/launch.sh
+set $rofi ~/.scripts/ddot/rofi/launch.sh
 
 # Configure border style
 default_border pixel 0
