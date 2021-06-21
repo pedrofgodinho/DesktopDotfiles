@@ -26,6 +26,11 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+Return exec $rofi appmenu
 bindsym $mod+Shift+e exec $rofi powermenu
 
+# Screenshots
+bindsym $mod+s exec --no-startup-id scrot ~/Pictures/screenshot_%y_%m_%d_%T.png && notify-send --app-name=Screnshot "Screenshot taken!"
+bindsym $mod+Shift+s exec --no-startup-id scrot -u ~/Pictures/screenshot_%y_%m_%d_%T.png && notify-send --app-name=Screnshot "Screenshot of window taken!"
+
+
 # volume
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
