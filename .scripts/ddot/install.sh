@@ -14,7 +14,7 @@ wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20I
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf -O "$HOME/.local/share/fonts/MesloLGS NF Bold Italic.ttf"
 fc-cache -f -v
 
-sudo wget -o /usr/share/pixmaps/wallpaper.png https://i.redd.it/pm1yv0e8sf061.png
+sudo wget -O /usr/share/pixmaps/wallpaper.png https://i.redd.it/pm1yv0e8sf061.png
 
 alias ddot='/usr/bin/git --git-dir=$HOME/.ddot --work-tree=$HOME'
 git clone --bare https://github.com/pedrofgodinho/DesktopDotfiles.git $HOME/.ddot
