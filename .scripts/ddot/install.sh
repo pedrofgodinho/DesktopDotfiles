@@ -1,4 +1,4 @@
-yes '' | yay -S --combinedupgrade --sudoloop xorg xorg-xinit lightdm noto-fonts noto-fonts-emoji alacritty zsh pulseaudio pulseaudio-alsa alsa-utils pavucontrol rofi dunst feh polkit mate-polkit xclip python python2 tree unzip p7zip neofetch wget lolcat fortune-mod cowsay vlc ranger ueberzug libnotify exa i3-gaps lightdm-slick-greeter bottom-bin picom-ibhagwan-git brave-bin reversal-icon-theme-git polybar ttf-nerd-fonts-hack-complete-git arandr nodejs npm scrot neovim python-pynvim
+yes '' | yay -S --combinedupgrade --sudoloop xorg xorg-xinit lightdm noto-fonts noto-fonts-emoji alacritty zsh pulseaudio pulseaudio-alsa alsa-utils pavucontrol rofi dunst feh polkit mate-polkit xclip python python2 tree unzip p7zip neofetch wget lolcat fortune-mod cowsay vlc ranger ueberzug libnotify exa i3-gaps lightdm-slick-greeter picom-ibhagwan-git reversal-icon-theme-git polybar ttf-nerd-fonts-hack-complete-git arandr nodejs npm scrot neovim python-pynvim
 
 sudo sed -i '/^\[Seat:\*]/a user-session=i3wm' /etc/lightdm/lightdm.conf
 sudo sed -i '/^\[Seat:\*]/a greeter-session=lightdm-slick-greeter' /etc/lightdm/lightdm.conf
