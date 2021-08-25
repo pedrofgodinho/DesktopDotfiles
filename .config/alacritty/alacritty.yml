@@ -12,7 +12,12 @@ font:
   bold_italic:
     family: MesloLGS NF
     style: Bold Italic
+  size: 8.5
 
+window:
+  padding:
+    x: 4
+    y: 4
 
 colors:
   # Default colors
