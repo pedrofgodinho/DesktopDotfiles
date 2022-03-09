@@ -1,7 +1,7 @@
 set $mod Mod4
 
 # Rofi launch script
-set $rofi ~/.scripts/ddot/rofi/launch.sh
+#set $rofi ~/.scripts/ddot/rofi/launch.sh
 
 # Configure border style
 default_border pixel 0
@@ -23,8 +23,9 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+Shift+q kill
 
 # start rofi
-bindsym $mod+Shift+Return exec $rofi appmenu
-bindsym $mod+Shift+e exec $rofi powermenu
+bindsym $mod+Shift+Return exec dmenu_run
+#bindsym $mod+Shift+Return exec $rofi appmenu
+#bindsym $mod+Shift+e exec $rofi powermenu
 
 # Screenshots
 bindsym $mod+s exec --no-startup-id scrot ~/Pictures/screenshot_%y_%m_%d_%T.png && notify-send --app-name=Screnshot "Screenshot taken!"
